@@ -27,5 +27,10 @@ $(document).ready(function(){
 		$('.learnmore').hide();
 	}
 
-	//Form action
+	//Form action. 
+	//event.preventDafault(): prevent from following the URL.
+	    $("a").click(function(event){
+        event.preventDefault();
+    });
+
 });
