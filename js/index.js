@@ -29,7 +29,7 @@ $(document).ready(function(){
 
 	//Form action. 
 	//event.preventDafault(): prevent from following the URL.
-	    $("a").click(function(event){
+	    $('.button, .blue').click(function(event){
         event.preventDefault();
     });
 
