@@ -11,13 +11,13 @@ $(document).ready(function(){
 	//Read More action
 	function showReadMoreContent(){
 		$('#show-this-on-click').slideDown(2000);
-		$('.readless, .hide').show();
+		$('.readless').show();
 		$('.readmore').hide();
 	}
 
 	function hideReadMoreContent() {
-		$('#show-this-on-click').slideUp(400);
-		$('#show-this-on-click, .readless').hide();
+		$('.readless, p#show-this-on-click').slideUp(2000);
+		$('.readless').hide();
 		$('.readmore').show();
 	}
 
@@ -27,8 +27,9 @@ $(document).ready(function(){
 		$('.learnmore').hide();
 	}
  
-	//event.preventDafault(): prevent from following the URL.
-	    $('.button, .blue, .readmore, .learnmore').click(function(event){
+	//event.preventDafault(): prevent from following the URL. action
+	//Sign Up Button, Read More and Learn more
+	    $('.button, .blue, .readmore, .readless, .learnmore').click(function(event){
         event.preventDefault();
     });
 
