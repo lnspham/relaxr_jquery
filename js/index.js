@@ -16,7 +16,7 @@ $(document).ready(function(){
 	}
 
 	function hideReadMoreContent() {
-		$('#show-this-on-click').slideUp(2000);
+		$('#show-this-on-click').slideUp(400);
 		$('#show-this-on-click, .readless').hide();
 		$('.readmore').show();
 	}
@@ -26,10 +26,9 @@ $(document).ready(function(){
 		$('#learnmoretext').slideDown(2000);
 		$('.learnmore').hide();
 	}
-
-	//Form action. 
+ 
 	//event.preventDafault(): prevent from following the URL.
-	    $('.button, .blue').click(function(event){
+	    $('.button, .blue, .readmore, .learnmore').click(function(event){
         event.preventDefault();
     });
 
