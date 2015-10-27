@@ -9,28 +9,25 @@ $(document).ready(function(){
 	/*provide the actions*/
 
 	//Read More action
-	function showReadMoreContent(){
+	function showReadMoreContent(event){
+		event.preventDefault();
 		$('#show-this-on-click').slideDown(2000);
 		$('.readless').show();
 		$('.readmore').hide();
 	}
 
-	function hideReadMoreContent() {
+	function hideReadMoreContent(event) {
+		event.preventDefault();
 		$('.readless, p#show-this-on-click').slideUp(2000);
 		$('.readless').hide();
 		$('.readmore').show();
 	}
 
 	//Learn More action
-	function hideLearnMoreContent(){
+	function hideLearnMoreContent(event){
+		event.preventDefault();
 		$('#learnmoretext').slideDown(2000);
 		$('.learnmore').hide();
 	}
- 
-	//event.preventDafault(): prevent from following the URL. action
-	//Sign Up Button, Read More and Learn more
-	    $('.button, .blue, .readmore, .readless, .learnmore').click(function(event){
-        event.preventDefault();
-    });
 
 });
