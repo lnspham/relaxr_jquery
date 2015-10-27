@@ -19,8 +19,8 @@ $(document).ready(function(){
 	function hideReadMoreContent(event) {
 		event.preventDefault();
 		$('.readless, p#show-this-on-click').slideUp(2000);
-		$('.readless').hide();
-		$('.readmore').show();
+		$('.readless').hide(2000);
+		$('.readmore').show(3000);
 	}
 
 	//Learn More action
